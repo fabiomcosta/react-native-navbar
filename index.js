@@ -2,6 +2,7 @@
 
 var React = require('react-native');
 var {
+  Navigator,
   PixelRatio,
   StatusBarIOS,
   StyleSheet,
@@ -10,12 +11,11 @@ var {
   View
 } = React;
 
-var NavigatorNavigationBar = require('NavigatorNavigationBar');
 var StaticContainer = require('StaticContainer.react');
 
 var styles = StyleSheet.create({
   navBarContainer: {
-    height: NavigatorNavigationBar.Styles.General.TotalNavHeight,
+    height: Navigator.NavigationBar.Styles.General.TotalNavHeight,
     backgroundColor: 'white',
     flexDirection: 'row',
     alignItems: 'flex-end',
