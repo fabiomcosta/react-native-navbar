@@ -11,8 +11,6 @@ var {
   View
 } = React;
 
-var StaticContainer = require('StaticContainer.react');
-
 var styles = StyleSheet.create({
   navBarContainer: {
     height: Navigator.NavigationBar.Styles.General.TotalNavHeight,
@@ -229,13 +227,11 @@ var NavigationBar = React.createClass({
         customStyle = this.props.style;
 
     return (
-      <StaticContainer shouldUpdate={this.props.shouldUpdate}>
-        <View style={[styles.navBarContainer, backgroundStyle, customStyle ]}>
-          {this.getTitleElement()}
-          {this.getLeftButtonElement()}
-          {this.getRightButtonElement()}
-        </View>
-      </StaticContainer>
+      <View style={[styles.navBarContainer, backgroundStyle, customStyle ]}>
+        {this.getTitleElement()}
+        {this.getLeftButtonElement()}
+        {this.getRightButtonElement()}
+      </View>
     );
   },
 });
