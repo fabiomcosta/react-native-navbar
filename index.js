@@ -10,12 +10,12 @@ var {
   View
 } = React;
 
-var NavigatorNavigationBarStyles = require('NavigatorNavigationBarStyles');
+var NavigatorNavigationBar = require('NavigatorNavigationBar');
 var StaticContainer = require('StaticContainer.react');
 
 var styles = StyleSheet.create({
   navBarContainer: {
-    height: NavigatorNavigationBarStyles.General.TotalNavHeight,
+    height: NavigatorNavigationBar.Styles.General.TotalNavHeight,
     backgroundColor: 'white',
     flexDirection: 'row',
     alignItems: 'flex-end',
